@@ -7,7 +7,46 @@
     <title><Form></Form></title>
 
     
-    <script type="module" crossorigin src="/Kostiantyn2020-goit-js-hw-09/assets/styles-3c4e11fa.js"></script>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .feedback-form {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 1em;
+        background: #f9f9f9;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      .feedback-form label {
+        display: block;
+        margin-bottom: 0.5em;
+        color: #333333;
+      }
+      .feedback-form input,
+      .feedback-form textarea {
+        width: 100%;
+        padding: 0.5em;
+        margin-bottom: 1em;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+      .feedback-form button {
+        padding: 0.7em 1.5em;
+        color: #fff;
+        background-color: #007bff;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+      .feedback-form button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+    <script type="module" crossorigin src="/Kostiantyn2020-goit-js-hw-09/commonHelpers2.js"></script>
+    <link rel="modulepreload" crossorigin href="/Kostiantyn2020-goit-js-hw-09/assets/styles-3c4e11fa.js">
     <link rel="stylesheet" href="/Kostiantyn2020-goit-js-hw-09/assets/styles-d3b5fc92.css">
   </head>
   <body>
@@ -15,7 +54,17 @@
       <a href="./index.html">Go to home</a>
       <h1>Welcome to page 3</h1>
     </section>
-
+    <form class="feedback-form" autocomplete="off">
+      <label>
+        Email
+        <input type="email" name="email" autofocus />
+      </label>
+      <label>
+        Message
+        <textarea name="message" rows="8"></textarea>
+      </label>
+      <button type="submit">Submit</button>
+    </form>
     
   </body>
 </html>
